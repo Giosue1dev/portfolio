@@ -168,7 +168,6 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after{
     position: absolute;
     top:1200px;
     display: block;
-
 }
 .contact-form h3{
     position: relative;
@@ -286,30 +285,49 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after{
    .contact-form h3{
     position: absolute;
     left: 90px;
+    font-size: 25px;
    }
     .social{
-    position: absolute;
-    left: 20px;
+     bottom: 100px;
+    left: 50px;
    }
    }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .img{
-        position: absolute;
-        top: 35%;
-        right: 42%;
-        width:20%;
-        height: 22%;
+    p{
+        font-size: 20px;
+    }
+
+    .home-content h1{
+        font-size: 45px;
+        right: 10px;
+    }
+    .home-content h3{
+        font-size: 35px;
+        right: 10px;
+    }
+    .home-content p{
+        width: 80%;
     }
     .image{
-        position: absolute;
-        top: 45%;
-        right: 10%;
         height: 20%;
-    }
-    .home{
+        width: 30%; 
         position: absolute;
-        top :100px
+        right: 0%;
     }
+    .services{
+        position: relative;
+       font-size: 10px;
+       height: 100px;
+
+    }
+   .contact-form h3{
+    position: absolute;
+    left: 150px;
+    bottom: 50px;
+   }
+    .social{
+        left: 150px;
+   }
     
 }
