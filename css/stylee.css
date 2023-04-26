@@ -12,12 +12,6 @@ body{
     min-height: 100px;
     font-size: 15px;
 }
-.logo{
-   width: 2%;
-   position: absolute;
-   top: 1px;
-   left: 1px;
-}
 .container{
     position: relative;
     width: 100%;
