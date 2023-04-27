@@ -166,13 +166,13 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after{
 .contact-form{
     position: absolute;
     top:1200px;
+    left: 45%;
     display: block;
 }
 .contact-form h3{
     position: relative;
     color: white;
     font-size: 30px;
-    left: 850px;
 }
 .contact-form span{
     color: #00abf0;
@@ -180,8 +180,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after{
 
 .social{
     position: relative;
-    top :60px;
-    left: 850px;
+    display: inline-block;
 }
 .social a{
     position: relative;
@@ -221,7 +220,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after{
     bottom: 30%;
     border-radius: 80px;
     height: 50%;
-    width: 30%;
+    width: 20%;
 }
 
 
@@ -255,10 +254,13 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after{
     width: 18%;
     height: 35%;
 }
-@media (max-width:400px) {
-    body{
-        min-height: 5000px;
+@media(max-width:289px){
+    .image{
+        position: absolute;
+        left: 160px;
     }
+}
+@media (max-width:400px) {
     .home{
         position: absolute;
         top: 300px;
@@ -276,8 +278,63 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after{
     }
     .home-content p{
         font-size: 14px;
+        left: 10px;
     }
     
+    .image{
+        height: 40%;
+        width: 80%;
+        left: 195px;  
+    }
+    .services{
+        position: relative;
+       font-size: 10px;
+       height: 100px;
+       top: 200px;
+       left: 50px;
+    }
+    .services h2{
+     position: absolute;
+     left: 10px;
+     top: 700px;
+    }
+    .services h3{
+     position: absolute;
+     left: 10px;
+     position: absolute;
+     top: 750px;
+    }
+    .services p{
+        font-size: 14px;
+        width: 100%;
+        position:absolute;
+        left: 10px;
+        top: 800px;
+    }
+    .contact-form{
+        left: 25%;
+    }
+  
+   }
+@media only screen and (min-width: 401px) and (max-width:459px){
+    .home{
+        position: absolute;
+        top: 150px;
+        left:0px;
+        width: 30%;
+
+    }  
+    .home-content h1{
+        font-size: 30px;
+        right: 10px;
+    }
+    .home-content h3{
+        font-size: 20px;
+        right: 10px;
+    }
+    .home-content p{
+        font-size: 15px;
+    } 
     .image{
         height: 40%;
         width: 80%;  
@@ -286,7 +343,8 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after{
         position: relative;
        font-size: 10px;
        height: 100px;
-       top: 200px;
+       top: 50px;
+       left: 60px;
     }
     .services h2{
      position: absolute;
@@ -294,8 +352,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after{
     }
     .services h3{
      position: absolute;
-     left: 10px;
-     position: absolute;
+     
      top: 800px;
     }
     .services p{
@@ -307,20 +364,18 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after{
     }
     .contact-form{
         position: relative;
-        bottom: 100%;
-        right: 850px;
+        display: inline;
     }
-  
-   }
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-    body{
-        min-height: 5000px;
+    .social{
+        display: inline;
     }
+}
+@media only screen and (min-width: 460px) and (max-width: 960px) {
+    
     .home{
         position: absolute;
         left: 40px;
-        width: 50%;
+        width: 30%;
 
     }
     .home-content h1{
@@ -343,22 +398,36 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after{
         position: relative;
        font-size: 10px;
        height: 100px;
+       right: 30px;
+       display: inline;
     }
     .services h3{
      top: 750px;
     }
-    .services p{
+       .services p{
         font-size: 19px;
         width: 50%;
         top: 800px;
         left: 170px;
+        display: inline-block;
     }
     .contact-form{
         position: relative;
-        right: 550px;
-    }
-    .social{
+        right: 25%;
         display: inline;
+    }
+    .contact-form h3{
+        display: inline-block;
+        position: relative;
+        bottom: 60px;
+        right: 3%;
+    }
+
+    
+    .social{
+        display: inline-block;
+        right: 25%;
     }
   
    }
+  
