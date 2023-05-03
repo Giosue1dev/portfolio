@@ -41,7 +41,6 @@ body{
     left: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-bottom:20px ;
     font-size: 100%;
 }
@@ -92,6 +91,7 @@ body{
  .education{
     position: relative;
     top:30px;
+    list-style: none;
  }
 .right ul li{
     list-style: none;
@@ -154,25 +154,25 @@ body{
    position: relative;
    right: 25px;
 }
-  @media(max-width: 1000px){
+i{
+   margin-right: 10px;
+}
+  @media  (max-width: 1000px){
    .container{
       margin: 10px;
       grid-template-columns: repeat(1,1fr);
 
    }
-
-   /*.left{
-      height: 100%;
-      overflow:scroll;
-      
-   }*/
+   .icones{
+      grid-template-columns: 2fr 2fr;
+   }
 }
 
 
 @media (max-width:401) {
    *{
       font-size: 15px;
-   }
+   } 
 }
 
   
