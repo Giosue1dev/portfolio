@@ -100,13 +100,14 @@ body{
     
     color:gray;
  }
-
+ .certification{
+   list-style: decimal;
+ }
 
  .icones{
    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
  }
-
 
 .table{
     width: 100%;
@@ -116,7 +117,7 @@ body{
 i{
    margin-right: 10px;
 }
-  @media  (max-width: 1000px){
+  @media  only screen and (min-width:402px) and (max-width: 1000px){
    .container{
       margin: 10px;
       grid-template-columns: repeat(1,1fr);
@@ -129,11 +130,19 @@ i{
 
 
 @media (max-width:401) {
-   *{
-      font-size: 15px;
-   } 
-   td{
-      padding-right  : 100px;
+   .container{
+      margin: 10px;
+      grid-template-columns: repeat(1,1fr);
+
+   }
+   .icones{
+      grid-template-columns: 2fr 2fr;
+   }
+
+   
+   .soft{
+     position: absolute;
+     bottom: 10px;
    }
 }
 

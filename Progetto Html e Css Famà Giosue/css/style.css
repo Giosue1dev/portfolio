@@ -254,10 +254,23 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after{
         width: 60%;
     }
     .image{
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
     .main-text{
         width: 60%;
+    } 
+    .home-content{
+        width: 100%;
+        margin-right: 10 0px;
+        }
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+       
+    }
+    .services{
+        flex-direction: column;
+        align-items: center;
     }
 }
