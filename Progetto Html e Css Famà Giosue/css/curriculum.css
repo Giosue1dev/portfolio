@@ -108,16 +108,34 @@ body{
    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
  }
+ .soft{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+ }
 
-.table{
-    width: 100%;
-
-    
+h4{
+   margin-bottom: 0px;
+}
+h5{
+   margin-bottom: 0px;
 }
 i{
    margin-right: 10px;
 }
-  @media  only screen and (min-width:402px) and (max-width: 1000px){
+
+@media (max-width:401px){
+  .soft{
+     display: block;   
+  }
+}
+
+
+
+
+
+
+@media  (max-width: 1000px){
    .container{
       margin: 10px;
       grid-template-columns: repeat(1,1fr);
@@ -129,21 +147,6 @@ i{
 }
 
 
-@media (max-width:401) {
-   .container{
-      margin: 10px;
-      grid-template-columns: repeat(1,1fr);
 
-   }
-   .icones{
-      grid-template-columns: 2fr 2fr;
-   }
-
-   
-   .soft{
-     position: absolute;
-     bottom: 10px;
-   }
-}
 
   
