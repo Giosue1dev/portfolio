@@ -112,5 +112,8 @@ document.getElementById("result").innerHTML=counter;
 }
 ```
 
-![image.png]
+![foto](/Progetto%20js/image/image.png)
+This is the result!
+
+if you want to try [click_here](http://127.0.0.1:5500/Progetto%20js/index.html)
 
