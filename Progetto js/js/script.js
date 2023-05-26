@@ -1,3 +1,7 @@
+
+
+
+
 let buttonPlus = document.querySelector("plus");
 let buttonReset = document.querySelector("reset");
 let buttonLess = document.querySelector("less");

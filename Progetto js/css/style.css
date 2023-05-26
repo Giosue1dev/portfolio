@@ -1,5 +1,4 @@
 
-
 html,
 body{
     height: 100%;
@@ -27,7 +26,7 @@ h1{
 .box{
     background-color: #45e534;
     background: linear-gradient(90deg,
-    rgb(235, 238, 187) 0%,
+  rgb(235, 238, 187) 0%,
     rgb(238, 43, 18) 100%);
     padding: 25px;
     border-radius: 10px;
