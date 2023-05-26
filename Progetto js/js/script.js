@@ -11,7 +11,8 @@ var counter = 0;
 plus.onclick = function(){
 counter++;
 document.getElementById("result").innerHTML=counter;
-} 
+}
+ 
 reset.onclick = function(){
 if (counter!=0) {
 counter=0;
@@ -20,6 +21,7 @@ alert("sei gia a zero");
 }
 document.getElementById("result").innerHTML=counter;
 }
+
 less.onclick = function(){
 if(counter!=0){
 counter--;
