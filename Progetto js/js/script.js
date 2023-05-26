@@ -12,12 +12,12 @@ plus.onclick = function(){
 counter++;
 document.getElementById("result").innerHTML=counter;
 }
- 
+
 reset.onclick = function(){
 if (counter!=0) {
 counter=0;
 } else {
-alert("sei gia a zero");
+alert("you are already at zero");
 }
 document.getElementById("result").innerHTML=counter;
 }
@@ -26,7 +26,7 @@ less.onclick = function(){
 if(counter!=0){
 counter--;
 }else{
-alert("non puoi scendere sotto lo 0");
+alert("you can't go below 0");
 }
 document.getElementById("result").innerHTML=counter;
 }

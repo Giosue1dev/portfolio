@@ -11,7 +11,7 @@ the date that has been set on the computer
 This is the setup in html of my clock
 
 ```html
-<div class="ore">
+<div class="time">
         <span class="hour" id="hour">00</span>
         <span class="dots">:</span>
         <span class="minutes" id="minutes">00</span>
@@ -92,7 +92,7 @@ less.onclick = function(){
 if(counter!=0){
 counter--;
 }else{
-alert("non puoi scendere sotto lo 0");
+alert("you can't go below 0");
 }
 document.getElementById("result").innerHTML=counter;
 }
@@ -106,7 +106,7 @@ reset.onclick = function(){
 if (counter!=0) {
 counter=0;
 } else {
-alert("sei gia a zero");
+alert("you are already at zero");
 }
 document.getElementById("result").innerHTML=counter;
 }
