@@ -112,5 +112,5 @@ document.getElementById("result").innerHTML=counter;
 }
 ```
 
-![foto] image.png
+![image.png]
 
