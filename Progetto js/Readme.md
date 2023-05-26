@@ -115,5 +115,5 @@ document.getElementById("result").innerHTML=counter;
 ![foto](/Progetto%20js/image/image.png)
 This is the result!
 
-if you want to try [click_here](http://127.0.0.1:5500/Progetto%20js/index.html)
+if you want to try [click_here](https://dancing-torte-2dd337.netlify.app)
 
