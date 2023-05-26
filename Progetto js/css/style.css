@@ -48,7 +48,7 @@ h1{
     cursor: pointer;
     transition: 0.5s;
  }
- .ore{
+ .time{
     animation: glow 0.11s ease-in-out infinite alternate;
     color: white;
     font-size: 46px;
