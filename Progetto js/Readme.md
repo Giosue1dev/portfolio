@@ -6,7 +6,7 @@ click +1, -1 or reset. In addition, I decided to insert a clock that indicates
 the date that has been set on the computer 
 
 ---
-#`## The clock 
+### The clock 
 
 This is the setup in html of my clock
 
@@ -30,18 +30,17 @@ function showTime(){
     var hours = now.getHours();
     var minutes = now.getMinutes();
     var seconds = now.getSeconds();
+```
+later I changed the default values ​​that I entered with html with those that I entered with javascript through the previous function
 
-    ``` 
-    
- 
-   ```javascript
-    document.getElementById("hour").innerHTML=hours;
+```javascript
+document.getElementById("hour").innerHTML=hours;
     document.getElementById("minutes").innerHTML=minutes;
     document.getElementById("seconds").innerHTML=seconds;
 }
 
 setInterval(showTime,10);
-````
+```
 
 ---
 
@@ -62,4 +61,56 @@ This is the setup in Html of my counter
     </div>
 
 ```
-and this is the javascript code
+
+
+initially I created some variables that lock the buttons and another counter variable which will be by default= 0 ù
+
+```javascript
+let buttonPlus = document.querySelector("plus");
+let buttonReset = document.querySelector("reset");
+let buttonLess = document.querySelector("less");
+var counter = 0;
+```
+
+then I created the first function one for each button
+
+1. the first function is for the +1 button which, when clicked, increases the counter by one and replaces the result of the div which was 0 by default
+
+```javascript
+plus.onclick = function(){
+counter++;
+document.getElementById("result").innerHTML=counter;
+} 
+```
+
+2. the second works takes care of the -1 itself it is very similar to the first but in addition  
+I add an if(counter>=0) so the result can never go below zero and if by chance you click the -1  
+in that case an alert will pop up saying that it can't be done 
+
+```javascript
+less.onclick = function(){
+if(counter!=0){
+counter--;
+}else{
+alert("non puoi scendere sotto lo 0");
+}
+document.getElementById("result").innerHTML=counter;
+}
+```
+
+3. third and last function takes care of the reset so simply click the counter will be set  
+to zero then I added an if which says that if the number is already zero there is no need to click 
+
+```javascript
+reset.onclick = function(){
+if (counter!=0) {
+counter=0;
+} else {
+alert("sei gia a zero");
+}
+document.getElementById("result").innerHTML=counter;
+}
+```
+
+![foto] image.png
+
