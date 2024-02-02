@@ -1,0 +1,55 @@
+.Home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #555;
+  flex-direction:column-reverse;
+}
+
+.text-container {
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.4rem;
+  color: rgb(145, 131, 131);
+}
+
+.image-container img {
+  max-width: 30%; /* Ridotto ulteriormente il valore percentuale per diminuire le dimensioni dell'immagine */
+  height:auto;
+  border-radius: 5px;
+}
+.image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media query per schermi più piccoli */
+@media (max-width: 768px) {
+  .text-container {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .image-container img {
+    max-width: 80%; /* Incrementato il valore percentuale su schermi più piccoli */
+  }
+}

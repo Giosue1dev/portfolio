@@ -1,0 +1,50 @@
+.Contact-section {
+  background-color: lightgray;
+  padding: 20px; /* Aggiunto padding per migliorare la leggibilità */
+}
+
+.Contact-section ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Cambiato da 'row' a 'column' per una visualizzazione migliore su schermi più piccoli */
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.Contact-section li {
+  margin: 10px 0; /* Aggiunto margine verticale ai singoli elementi della sezione di contatto */
+  color: black;
+}
+
+.Contact-section a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.Contact-section a:hover {
+  color: #007bff;
+}
+
+span {
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+/* Media query per schermi più piccoli */
+@media (max-width: 768px) {
+  .Contact-section ul {
+    flex-direction:column; /* Cambiato da 'column' a 'row' su schermi più piccoli */
+  }
+
+  .Contact-section li {
+    margin: 0 10px; 
+    flex-wrap: wrap;
+  }
+}

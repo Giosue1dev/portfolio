@@ -1,0 +1,114 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.navbar button:focus {
+  outline: none;
+}
+
+/* Aggiungi stili per il menu mobile */
+.navbar .menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.navbar.show .menu-icon {
+  display: block;
+}
+
+.navbar.show nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.show nav ul {
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar.show nav li {
+  margin: 10px 0;
+}
+
+.navbar.show nav button {
+  font-size: 1rem;
+}
+
+/* Media query per rendere la Navbar ancora più responsive */
+@media (max-width: 1200px) {
+  .navbar li {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar li {
+    margin-left: 10px;
+  }
+}
+
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  
+    .navbar ul {
+      order: 2;
+      margin-top: 10px;
+    }
+  
+    .navbar .logo {
+      order: 1;
+    }
+  
+    .navbar.show nav ul {
+      order: 3;
+      margin-top: 0;
+    }
+  }

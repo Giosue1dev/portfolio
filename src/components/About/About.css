@@ -1,0 +1,50 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background-color: lightgray;
+  flex-direction: column;
+}
+
+.left-section {
+  width: 80%; /* Ridotto la larghezza per adattarsi meglio su schermi più piccoli */
+  padding: 20px;
+  text-align: center;
+}
+
+p {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.left-section {
+  font-size: 1.9rem;
+  width: 90%; /* Ridotto la larghezza per adattarsi meglio su schermi più piccoli */
+}
+
+.download-link {
+  display: inline-block; /* Aggiunto per consentire il padding corretto */
+  text-decoration: none;
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  margin-top: 20px; /* Aggiunto uno spazio superiore per separare il link dal testo */
+}
+
+.download-link:hover {
+  background-color: #0056b3;
+}
+
+/* Media query per schermi più piccoli */
+@media (max-width: 768px) {
+  .about-container {
+    min-height: 100vh; /* Aumentato l'altezza per riempire schermi più piccoli */
+  }
+
+  .left-section {
+    width: 80%; /* Occupa l'intera larghezza su schermi più piccoli */
+  }
+}

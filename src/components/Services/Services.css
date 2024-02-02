@@ -1,0 +1,31 @@
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: lightgray;
+    flex-direction: column;
+  }
+  
+  .frontend,
+  .backend {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    width: 50%; /* Utilizza l'intera larghezza del contenitore */
+  }
+  
+  .frontend {
+    margin-bottom: 20px;
+  }
+  
+  /* Media query per schermi più piccoli */
+  @media (max-width: 768px) {
+    .frontend,
+    .backend {
+      width: 60%; /* Riduci la larghezza su schermi più piccoli */
+    }
+}  
+  
