@@ -24,7 +24,7 @@ p {
 }
 
 .image-container img {
-  max-width: 20%; 
+  max-width: 30%; 
   height:auto;
   border-radius: 5px;
 }
