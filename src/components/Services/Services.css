@@ -29,6 +29,7 @@
     .frontend,
     .backend {
       width: 60%; /* Riduci la larghezza su schermi più piccoli */
+      text-align: left;
     }
 }  
   
