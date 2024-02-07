@@ -15,8 +15,11 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     background-color: white;
     width: 50%; /* Utilizza l'intera larghezza del contenitore */
+    text-align: center;
   }
-  
+  li{
+    list-style: none;
+  }
   .frontend {
     margin-bottom: 20px;
   }

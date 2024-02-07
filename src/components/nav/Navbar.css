@@ -27,7 +27,7 @@
 }
 
 .navbar li {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .navbar button {
@@ -36,6 +36,7 @@
   color: white;
   font-size: 1rem;
   cursor: pointer;
+
 }
 
 .navbar button:focus {
@@ -59,7 +60,6 @@
   align-items: flex-start;
   position: absolute;
   top: 60px;
-  left: 0;
   width: 100%;
   background-color: #333;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -71,11 +71,13 @@
 }
 
 .navbar.show nav li {
-  margin: 10px 0;
+  margin: 10px 20px;
+  margin-right: 10px;
 }
 
 .navbar.show nav button {
   font-size: 1rem;
+  margin-right: 60px;
 }
 
 /* Media query per rendere la Navbar ancora più responsive */

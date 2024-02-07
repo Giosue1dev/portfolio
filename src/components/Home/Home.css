@@ -24,7 +24,7 @@ p {
 }
 
 .image-container img {
-  max-width: 30%; /* Ridotto ulteriormente il valore percentuale per diminuire le dimensioni dell'immagine */
+  max-width: 20%; 
   height:auto;
   border-radius: 5px;
 }
@@ -32,9 +32,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
-/* Media query per schermi più piccoli */
+
 @media (max-width: 768px) {
   .text-container {
     margin-right: 0;
